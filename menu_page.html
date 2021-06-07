@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Test Menu</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu{
+            position: absolute;
+            height:100%;
+            background-color: lightblue;
+            
+
+        }
+        .menu_item{
+            position: relative;
+            padding: 10px 30px 10px 30px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            
+
+        }
+        .menu_item:hover{
+            background-color: lightcoral;
+
+        }
+        .dropdown{
+            display: inline-block;
+            background-color: lightblue;
+            position: absolute;
+            top:0px;
+            left:100%;
+            display: none;
+        }
+        .menu_item:hover .dropdown{
+            display: block;
+        }
+        .dropdown_item{
+            padding: 10px 30px 10px 30px;
+            white-space: nowrap;
+        }
+        .dropdown_item:hover{
+            background-color: lightcoral;
+        }
+        .dropdown_item a{
+            color: black;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu_item">Menu 1
+            <div class="dropdown">
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item"><a href="http://google.com">Google.com</a> </div>
+            </div>
+        </div>
+        <div class="menu_item">Menu 2
+            <div class="dropdown">
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+            </div>
+        </div>
+        <div class="menu_item">Menu 3
+            <div class="dropdown">
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+                <div class="dropdown_item">Dropdown item </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
